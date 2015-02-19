@@ -1,0 +1,5 @@
+<%= form_for @current_task, url: @url_hash, html: {:class => "form-task" } do |form| %> 
+  <%= I18n.t ('name')%>        :<br> <%= form.text_field :name, :value => @current_task.name || '' %> <br>
+  <%= I18n.t ('description')%> :<br> <%= form.text_area :description, size: "24x6", :value => @current_task.description || '' %> <br>
+  <%= form.submit (I18n.t ('save')) %>
+<% end %>

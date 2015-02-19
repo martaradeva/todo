@@ -1,0 +1,6 @@
+<h1><%= I18n.t ('new_task_page')%></h1>
+<p class="text-info"><%= I18n.t ('new_task_description')%></p>
+
+<%= @current_task.errors.full_messages.to_sentence %>
+
+<%= render partial: 'tasks/form' %>

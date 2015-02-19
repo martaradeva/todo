@@ -1,0 +1,33 @@
+bg:
+# content
+  hello: "Здравей, свят"
+  task: "задача"
+  name: "име"
+  description: "описание"
+  application_name: "Задачник"
+  index_page: "Динамичен списък със задачи"
+  save: "Запази!"
+#about page
+  about_page: "За нас"
+  about_description: "Това е един чутовно як задачник."
+
+#new task
+  new_task_page: "Нова задача"
+  new_task_description: "На тази страница може да създадете нова задача"
+
+# Edit Task
+  edit_task_page: "Редактирай задача"
+  edit_task_description: "Редактирайте съществуваща задача"
+
+#show task
+  show_task_page: "Детайлен изглед на задача"
+  show_task_description: "Вижте детайли за задачата"
+
+# crud
+  show: "преглед"
+  edit: "редактиране"
+  destroy: "изтриване"
+# navigation
+  home: "Начална страница"
+
+# <%= I18n.t ('')%>

@@ -1,0 +1,5 @@
+<h1><%= I18n.t ('show_task_page')%></h1>
+<p class="text-info"><%= I18n.t ('show_task_description')%></p>
+<div class="lead"><%= @current_task.name %></div>
+<div class="text"><%= @current_task.description %></div>
+<div class="link"><%= link_to (I18n.t ('edit')), edit_task_path(@current_task) %></div>
