@@ -7,6 +7,7 @@ bg:
   application_name: "Задачник"
   index_page: "Динамичен списък със задачи"
   save: "Запази!"
+  are_you_sure: "Потвърждавате ли?  "
 #about page
   about_page: "За нас"
   about_description: "Това е един чутовно як задачник."

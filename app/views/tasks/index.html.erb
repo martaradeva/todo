@@ -6,7 +6,7 @@
 		<div class="inline lead"><%= link_to task.name, task_path(task)%></div>
 		<div class="inline link"><%= link_to (I18n.t ('show')), task_path(task) %></div>
 		<div class="inline link"><%= link_to (I18n.t ('edit')), edit_task_path(task) %></div>
-		<div class="inline link"><%= link_to (I18n.t ('destroy')), task_path(task), {:confirm => "Are you sure?", :method => :delete } %></div>
+		<div class="inline link"><%= link_to (I18n.t ('destroy')), task_path(task), :data => {:confirm => (I18n.t ('are_you_sure'))}, :method => :delete %></div>
 	</div>
 <% end %>
 <div class="link"><%= link_to (I18n.t ('new_task_page')), new_task_path %></div>
