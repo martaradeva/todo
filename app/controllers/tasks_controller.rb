@@ -39,4 +39,13 @@ class TasksController < ApplicationController
     #render :text => params["id"].inspect
     @current_task = Task.find_by id: params["id"]
   end
+
+  def destroy
+    @current_task = Task.find_by id: params["id"]
+    if @current_task.present?
+      @current_task.destroy
+    end
+    redirect_to tasks_path
+  end
+
 end

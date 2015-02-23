@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :tasks
   post 'tasks/:id' => 'tasks#update'
+  delete 'tasks/:id' => 'tasks#destroy'
   root to: redirect('/tasks')
   get 'pages/:action' => 'pages#:action'
 
