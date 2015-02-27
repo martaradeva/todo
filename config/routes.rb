@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  resources :tasks
-  post 'tasks/:id' => 'tasks#update'
-  delete 'tasks/:id' => 'tasks#destroy'
-  root to: redirect('/tasks')
-  get 'pages/:action' => 'pages#:action'
+
+  scope '(:locale)' do
+    root to: 'tasks#index', via: :all
+    resources :tasks
+    # post 'tasks/:id' => 'tasks#update'
+    # delete 'tasks/:id' => 'tasks#destroy'
+    get 'pages/:action' => 'pages#:action'
+  end
 
 # get '/tasks/show', to: 'tasks#show'
 # get 'pages/:id' => 'pages#show'
