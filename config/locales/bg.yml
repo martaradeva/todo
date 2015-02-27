@@ -1,34 +1,53 @@
 bg:
-# content
-  hello: "Здравей, свят"
-  task: "задача"
-  name: "име"
-  description: "описание"
-  application_name: "Задачник"
-  index_page: "Динамичен списък със задачи"
-  save: "Запази!"
-  are_you_sure: "Потвърждавате ли?  "
-#about page
-  about_page: "За нас"
-  about_description: "Това е един чутовно як задачник."
 
-#new task
-  new_task_page: "Нова задача"
-  new_task_description: "На тази страница може да създадете нова задача"
+  application:
+    name:  "Задачник"
+    title: "Задачник"
 
-# Edit Task
-  edit_task_page: "Редактирай задача"
-  edit_task_description: "Редактирайте съществуваща задача"
+  nav:
+    home: "Начална страница"
 
-#show task
-  show_task_page: "Детайлен изглед на задача"
-  show_task_description: "Вижте детайли за задачата"
+  texts:
+    show:    "преглед"
+    edit:    "редактиране"
+    destroy: "изтриване"
 
-# crud
-  show: "преглед"
-  edit: "редактиране"
-  destroy: "изтриване"
-# navigation
-  home: "Начална страница"
+    are_you_sure: "Потвърждавате ли?"
+
+  form:
+    name:        "име"
+    description: "описание"
+    save: "Запази!"
+
+  tasks:
+    index:
+      title:       "Динамичен списък със задачи"
+      description: "Това е един чутовно як задачник."
+    new:
+      title:       "Нова задача"
+      description: "На тази страница може да създадете нова задача"
+    create:
+    edit:
+      title:       "Редактирай задача"
+      description: "Редактирайте съществуваща задача"
+    update:
+    show:
+      title:       "Детайлен изглед на задача"
+      description: "Вижте детайли за задачата"
+    destroy:
+
+  pages:
+    about:
+      title:       "За нас"
+      description: "Това е един чутовно як задачник."
+
+  activerecord:
+    models:
+      task:  "задача"
+      tasks: "задачи"
+    attributes:
+      task:
+        name:        "име"
+        description: "описание"
 
 # <%= I18n.t ('')%>

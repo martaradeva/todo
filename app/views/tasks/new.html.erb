@@ -1,5 +1,5 @@
-<h1><%= I18n.t ('new_task_page')%></h1>
-<p class="text-info"><%= I18n.t ('new_task_description')%></p>
+<h1><%= t ('.title')%></h1>
+<p class="text-info"><%= t ('.description')%></p>
 
 <%= @current_task.errors.full_messages.to_sentence %>
 
